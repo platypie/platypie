@@ -1,5 +1,3 @@
-[an example](http://example.com/ "Title")
-
 # What is <a href="http://platypie.org">Platypie</a>?
 Platypie is an [open source](https://github.com/platypie "our git"), and truly crossplatform mesh networking initiative inspired by **[the world's favourite monotreme](http://en.wikipedia.org/wiki/Platypus)**, the Platypus!  
   
