@@ -1,5 +1,4 @@
 # What is <a href="http://platypie.org">Platypie</a>?
-<hr>
 Platypie is an <a href="https://github.com/platypie">open source</a>, and truly crossplatform mesh networking initiative inspired by **<a href="http://en.wikipedia.org/wiki/Platypus">the world's 
 favourite monotreme</a>**, the Platypus!  
   
@@ -10,7 +9,6 @@ also packs a venomous stinger which can leave would be attackers in agony for mo
 We believe not only in tough cryptographic standards, but in providing a network architecture that cannot be compromised.  
   
 ## Install it
-<hr>
   
 ```bash
 git clone https://github.com/platypie/platypie.git  
@@ -19,5 +17,4 @@ make nightly-install
 ```
   
 ## Run it  
-<hr>
 `make run`  
