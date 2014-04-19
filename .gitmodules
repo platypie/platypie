@@ -1,0 +1,3 @@
+[submodule "libs/sodiumoxide"]
+	path = libs/sodiumoxide
+	url = git://github.com/dnaq/sodiumoxide.git
