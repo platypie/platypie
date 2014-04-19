@@ -7,6 +7,8 @@ also packs a venomous stinger which [can leave would be attackers in agony for m
 <br>
 We believe not only in tough cryptographic standards, but in providing a network architecture that cannot be compromised.  
   
+Platypie is being developed in [Rust](http://www.rust-lang.org/ "Rust Lang"), a modern, multi-paradigm programming language that we think is perfect for solving the issues of the modern web. Being web developers, we are also fond of [Javascript](http://nodejs.org/ "nodejs"). If you're interested in contributing, learning either would be a good place to start. Fixing the web is not just a technical problem, it is also very much a social problem. If you are skilled in graphic design, communication, or network hardware configuration, by all means, [get involved](https://github.com/platypie/platypie#get-involved)!  
+  
 ## Install it  
   
 On unix based systems with git already installed:  
