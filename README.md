@@ -27,3 +27,10 @@ make nightly-install
 Join us on [Freenode](http://webchat.freenode.net/?channels=%23platypie "freenode's webchat") in #platypie  
   
 If you can program, and intend to submit code to be included in the official repository, start by first reading HACKING.md on our coding practices.  
+  
+If you don't program, or if you think this is over your head, we still:  
+* artwork
+* documentation
+* testing on various architectures/systems
+* third party applications
+* input (perhaps most importantly)

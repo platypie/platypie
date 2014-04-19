@@ -9,6 +9,7 @@ Read [Mozilla's guide to Rust style](https://github.com/mozilla/rust/wiki/Note-s
   
 ### Otherwise  
 * Set your text editor or IDE to insert spaces instead of tabs. Indentation should be two (2) characters wide, and the terminating brace (where applicable) must be inserted at the same depth it began on.  
+* Avoid leaving multiple successive empty lines. These add up quickly, and take up valuable screen real estate.  
 * Begin each source file with a multiline comment including:  
   1. the name of the file.
   1. a brief summary of the code's purpose.
