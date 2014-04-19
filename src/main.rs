@@ -1,3 +1,9 @@
+/*
+  main.rs
+  Platypie's core executable
+  currently only requires Rust's standard API
+*/
+
 fn main() {
   let message = [
     "Thanks for installing Platypie!",
@@ -11,4 +17,9 @@ fn main() {
   for sptr in message.iter() {
     println!("{}",*sptr);
   }
+}
+
+#[test]
+fn main_test() {
+  assert!(true); // the simplest test possible, a tautology
 }
