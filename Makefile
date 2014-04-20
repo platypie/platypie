@@ -49,7 +49,7 @@ SODIUMDIOXIDE = libs/sodiumoxide/$(shell rustc --crate-file-name libs/sodiumoxid
 DEPS = -L libs/sodiumoxide
 
 $(SODIUMDIOXIDE):
-	cd libs/sodiumoxide/ && $(RUSTC) -O src/sodiumoxide/lib.rs
+	cd libs/sodiumoxide/ && $(COMPILER) -O src/sodiumoxide/lib.rs
 
 all: $(DEPS)
 	$(DEFAULT)
