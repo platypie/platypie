@@ -26,7 +26,7 @@ SHELL := /bin/bash
 
 # The default make command.
 # Change this to 'make lib' if you are building a library.
-DEFAULT = make help
+DEFAULT = make exe
 
 EXAMPLE_FILES = examples/*.rs
 SOURCE_FILES = $(shell test -e src/ && find src/ -type f)
@@ -45,7 +45,13 @@ TARGET = $(shell rustc --version | grep "host: " | cut -c 7-)
 # TARGET = x86_64-unknown-linux-gnu
 # TARGET = x86_64-apple-darwin 
 
-all:
+SODIUMDIOXIDE = libs/sodiumoxide/$(shell rustc --crate-file-name libs/sodiumoxide/src/sodiumoxide/lib.rs)
+DEPS = -L libs/sodiumoxide
+
+$(SODIUMDIOXIDE):
+	cd libs/sodiumoxide/ && $(RUSTC) -O src/sodiumoxide/lib.rs
+
+all: $(DEPS)
 	$(DEFAULT)
 
 help:
@@ -156,7 +162,7 @@ run: exe
 
 exe: bin src src/main.rs $(SOURCE_FILES)
 	clear \
-	&& $(COMPILER) --target $(TARGET) $(COMPILER_FLAGS) src/main.rs -o bin/main -L "target/$(TARGET)/lib" \
+	&& $(COMPILER) --target $(TARGET) $(COMPILER_FLAGS) src/main.rs -o bin/main $(DEPS) -L "target/$(TARGET)/lib" \
 	&& echo "--- Built executable" \
 	&& echo "--- Type 'make run' to run executable"
 
