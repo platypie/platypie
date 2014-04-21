@@ -1,8 +1,9 @@
 /*
    main.rs
    Platypie's core executable
-   currently only requires Rust's standard API
+    requires the Rust standard API and libsodium/liboxide
    */
+
 extern crate sodiumoxide;
 extern crate serialize;
 
@@ -15,12 +16,12 @@ fn main() {
     println!("{:?}", pk);
 
     let message = [
-        "Thanks for installing Platypie!",
+        "\nThanks for installing Platypie!",
         "We're trying to make the world a better place.",
         "We're very happy you've decided to get involved.",
         "Platypie is a work in progress.",
         "If you want to get involved, join us on IRC!",
-        "irc.freenode.net/#platypie"
+        "irc://irc.freenode.net/#platypie"
             ];
 
     for sptr in message.iter() {

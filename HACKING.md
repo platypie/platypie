@@ -8,8 +8,9 @@ We do our best to ensure that those who want to help are made welcome. In the in
 Read [Mozilla's guide to Rust style](https://github.com/mozilla/rust/wiki/Note-style-guide) before starting. If your code isn't up to this standard, it won't be accepted. With that being said, we are happy to help you improve as a [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software) Rust developer. There's no need to feel bad if your revision isn't accepted the first time around, it's a young language and we're fairly new to it ourselves.  
   
 ### Otherwise  
-* Set your text editor or IDE to insert spaces instead of tabs. Indentation should be four (4) characters wide, and the terminating brace (where applicable) must be inserted at the same depth it began on.
-* Avoid leaving multiple successive empty lines. These add up quickly, and take up valuable screen real estate.  
+* Set your text editor or IDE to insert spaces instead of tabs. Indentation should be four (4) characters wide, and the terminating curly brace (where applicable) must be inserted at the same depth it began on.
+* Closing comments and square braces are indented further, as in 'main.rs'. qmx's vim installation is set to include them in this style, and ansuz has no preference except that he desires uniformity.
+* Avoid leaving multiple successive empty lines. These add up quickly, and take up valuable screen real estate. That being said, a single newline between different types of statements is appropriate. Successive 'Let statements' should be clustered, but a loop should be distinct.
 * Begin each source file with a multiline comment including:  
   1. the name of the file.
   1. a brief summary of the code's purpose.
