@@ -13,7 +13,16 @@ The value of networking software is a product of its adoption. Although it's cri
   
 ## Install it  
   
-So far this assumes you're on a unix based system. This is alpha software, and it doesn't do much at the moment. It's only worth the installation if you intend to help us test it. Streamlining installation is a priority, but so far we're just assembling the core. Things are likely to change around.  
+Most of these commands will work on any Unix-based system. Some of them assume a Debian base. This is alpha software, and it doesn't do much at the moment. It's only worth the installation if you intend to help us test it. While we're assembling the core, things are guaranteed to change around.  
+If you'd like support on your OS or architecture, your best option is to get involved with testing.  
+So far it has been installed on:  
+* Mac OSX
+* Debian 7
+* Ubuntu 12.04 && 14.04
+* Mint
+* Arch (but not on arm)
+* Gentoo
+
   
 First satisfy the dependencies.  
 `sudo apt-get install git build-essential make`  
