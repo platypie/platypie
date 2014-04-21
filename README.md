@@ -33,7 +33,7 @@ make nightly-install # this installs rust (from a binary)
 git submodule init
 git submodule update # get sodiumOxide
 cd libs/sodiumoxide
-rustc -O src/sodiumoxide/libs.rs
+rustc -O src/sodiumoxide/lib.rs
 cd ../..
 make exe
 ```
