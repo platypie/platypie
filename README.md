@@ -22,19 +22,24 @@ So far it has been installed on:
 * Mint
 * Arch (but not on arm)
 * Gentoo
+* Windows support is being investigated
 
+Start by installing whichever stable binary of [Rust](http://www.rust-lang.org/install.html) is available for your system.  
   
-First satisfy the dependencies.  
+Satisfy the dependencies.  
 `sudo apt-get install git build-essential make`  
-Then Install libsodium, you can build [from source](https://download.libsodium.org/libsodium/releases/), if your OS doesn't offer an official package.  
+  
+Install libsodium:  
+if your OS doesn't offer an official package.  
+
 ```bash
-tar xvzf libsodium*
-cd libsodium-<version>/
+wget https://download.libsodium.org/libsodium/releases/libsodium-0.4.5.tar.gz
+tar xvzf libsodium-0.4.5.tar.gz
+cd libsodium-0.4.5
 sudo su
 ./configure --prefix=/usr && make && make check && make install
+exit
 ```
-  
-Install the appropriate stable binary of [Rust](http://www.rust-lang.org/install.html)  
   
 Change directories to where you'd like to install platypie, then:  
 ```bash
