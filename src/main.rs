@@ -1,7 +1,7 @@
 /*
    main.rs
    Platypie's core executable
-    requires the Rust standard API and libsodium/liboxide
+   requires the Rust standard API and libsodium/liboxide
    */
 
 extern crate sodiumoxide;
