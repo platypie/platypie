@@ -16,7 +16,7 @@ The value of networking software is a product of its adoption. Although it's cri
 So far this assumes you're on a unix based system. This is alpha software, and it doesn't do much at the moment. It's only worth the installation if you intend to help us test it.  
   
 First satisfy the dependencies.  
-`sudo apt-get install git make`
+`sudo apt-get install git build-essential make`
 Then Install libsodium, you can build [from source](https://download.libsodium.org/libsodium/releases/), if your OS doesn't offer an official package.  
 ```bash
 tar xvzf libsodium*
