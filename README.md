@@ -13,7 +13,7 @@ The value of networking software is a product of its adoption. Although it's cri
   
 ## Install it  
   
-So far this assumes you're on a unix based system. This is alpha software, and it doesn't do much at the moment. It's only worth the installation if you intend to help us test it.  
+So far this assumes you're on a unix based system. This is alpha software, and it doesn't do much at the moment. It's only worth the installation if you intend to help us test it. Streamlining installation is a priority, but so far we're just assembling the core. Things are likely to change around.  
   
 First satisfy the dependencies.  
 `sudo apt-get install git build-essential make`
@@ -25,11 +25,12 @@ sudo su
 ./configure --prefix=/usr && make && make check && make install
 ```
   
+Install the appropriate stable binary of [Rust](http://www.rust-lang.org/install.html)  
+  
 Change directories to where you'd like to install platypie, then:  
 ```bash
 git clone https://github.com/platypie/platypie.git  
 cd platypie
-make nightly-install # this installs rust (from a binary)
 git submodule init
 git submodule update # get sodiumOxide
 cd libs/sodiumoxide
